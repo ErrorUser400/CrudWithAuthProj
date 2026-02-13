@@ -4,6 +4,10 @@ namespace CrudWithAuth.Model.DTO
 {
     public class ToDoDto
     {
+        public int Id { get; set; }
+        public string Title { get; set; } = string.Empty;
+        public bool IsDone { get; set; } = false;
+
         //code made a fitt if i didn't add it. need default constructor
         public ToDoDto()
         {
@@ -19,8 +23,5 @@ namespace CrudWithAuth.Model.DTO
             IsDone = toDo.IsDone;
         }
 
-        public int Id { get; set; }
-        public string Title { get; set; } = string.Empty;
-        public bool IsDone { get; set; } = false;
     }
 }
